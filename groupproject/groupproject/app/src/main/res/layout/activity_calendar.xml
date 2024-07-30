@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="112dp"
+        android:backgroundTint="#000000"
+        android:text="BACK"
+        android:layout_below="@id/email"
+        android:onClick="lastPage"/>
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#000000"
+        android:text="SEND"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@id/email"
+        android:layout_toRightOf="@id/back"
+        android:onClick="sendEmail"/>
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/saturday_workouts"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Enter email"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:id="@+id/Sunday"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sunday"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:id="@+id/sunday_workouts"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Sunday"
+        android:text="Rest Day!"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/Monday"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sunday_workouts"
+        android:text="Monday"
+        android:textStyle="bold"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:id="@+id/monday_workouts"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Monday"
+        android:textSize="20sp"
+
+        android:text="Rest Day!"
+        />
+    <TextView
+        android:id="@+id/Tuesday"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tuesday"
+        android:textStyle="bold"
+        android:layout_below="@id/monday_workouts"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:id="@+id/tuesday_workouts"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Tuesday"
+        android:text="Rest Day!"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/Wednesday"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wednesday"
+        android:textStyle="bold"
+        android:layout_below="@id/tuesday_workouts"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:id="@+id/wednesday_workouts"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Wednesday"
+        android:text="Rest Day!"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/Thursday"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thursday"
+        android:textStyle="bold"
+        android:layout_below="@id/wednesday_workouts"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:id="@+id/thursday_workouts"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Thursday"
+        android:text="Rest Day!"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/Friday"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Friday"
+        android:textStyle="bold"
+        android:layout_below="@id/thursday_workouts"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:id="@+id/friday_workouts"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Friday"
+        android:text="Rest Day!"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/Saturday"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saturday"
+        android:textStyle="bold"
+        android:layout_below="@id/friday_workouts"
+        android:textSize="30sp"
+        />
+    <TextView
+        android:id="@+id/saturday_workouts"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Saturday"
+        android:text="Rest Day!"
+        android:textSize="20sp"
+        />
+
+</RelativeLayout>

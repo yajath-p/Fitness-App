@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/workout_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:text="Select a Workout"
+        android:textSize="30sp" />
+
+    <Spinner
+        android:id="@+id/workout_activities"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/workout_text"
+        android:layout_marginTop="20sp"/>
+
+    <TextView
+        android:id="@+id/goal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workout_activities"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40sp"
+        android:text="Goal: "
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/warning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click back and add some Workouts!"
+        android:visibility="invisible"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/stop_watch"
+        android:textSize="96sp"
+        android:gravity="center"
+        android:layout_below="@+id/goal"
+        android:textStyle="bold"
+        android:background="#D3D3D3"
+        android:text="00:00"
+        android:layout_marginTop="40sp"/>
+
+    <Button
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stop_watch"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="40dp"
+        android:backgroundTint="#009900"
+        android:text="START"
+        android:onClick="timerStartStop"/>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stop_watch"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="50dp"
+        android:backgroundTint="#000000"
+        android:text="RESET"
+        android:onClick="timerReset"/>
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:backgroundTint="#000000"
+        android:text="BACK"
+        android:onClick="lastPage"/>
+
+</RelativeLayout>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "560877657641",
+    "project_id": "cmsc436-group-project-a4015",
+    "storage_bucket": "cmsc436-group-project-a4015.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:560877657641:android:8cbb3d6b4f5484ba768638",
+        "android_client_info": {
+          "package_name": "com.example.groupproject"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "EXAMPLE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
